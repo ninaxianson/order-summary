@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* CSS RESET */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.card__title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card__text {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.subscription {
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 0px 0px 14px 3px rgba(224, 232, 255, .8);
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    max-width: 90%;
+    padding: 1rem 2rem;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.music-icon {
+    height: 60px;
+    margin-right: .5rem;
+    width: 60px;
+}
+
+.subscription__title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.subscription__price {
+    color: hsl(224, 23%, 55%);
+}
+
+.subscription__change {
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 6px;
+    border: 2px solid rgba(27, 31, 35, .15);
+    box-shadow: 8px 13px 8px 0px rgba(224, 232, 255, .8);
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+    display: block;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: .7rem 2rem;
+    width: 70%;
+}
+
+.cancel-btn {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 6px;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 1.5rem auto;
+    padding: .5rem;
+    width: 70%;
+}
+
+.subscription__change :hover {
+    color: hsla(245, 75%, 52%, 0.80);
+}
+
+.payment-btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.90);
+    color: white;
+}
+
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
