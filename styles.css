@@ -10,13 +10,12 @@
 }
 
 body {
-    align-items: center;
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -24,6 +23,10 @@ body {
     margin: 0 auto;
     max-width: 600px;
     padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+
 }
 
 .card {
@@ -59,10 +62,11 @@ body {
     background-color: hsl(225, 100%, 98%);
     box-shadow: 0px 0px 14px 3px rgba(224, 232, 255, .8);
     display: flex;
-    justify-content: space-between;
-    margin: 2rem;
-    max-width: 90%;
-    padding: 1rem 2rem;
+    justify-content:space-around;
+    padding: 1rem;
+    width:90%;
+    margin: 0 auto;
+    flex-wrap: wrap;    
 }
 
 .flex {
@@ -92,7 +96,6 @@ body {
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    padding-left: 2rem;
 }
 
 .payment-btn {
